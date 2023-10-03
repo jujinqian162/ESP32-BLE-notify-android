@@ -116,11 +116,11 @@ void loop() {
             pTxCharacteristic->setValue("notify!");
             pTxCharacteristic->notify();
             Serial.println("notify");
-            delay(3900);
+            delay(900);
          }
         delay(100);
     } else {
-        delay(2000);
+        delay(3900);
     }
     
     if (!deviceConnected && oldDeviceConnected)
